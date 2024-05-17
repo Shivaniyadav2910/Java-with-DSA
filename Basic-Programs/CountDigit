@@ -1,0 +1,13 @@
+ static int evenlyDivides(int N){
+        // code here
+        int n=N;
+        int count=0;
+        while(n!=0){
+            int m=n%10;
+            if(m!=0 && N%m==0){
+                count++;
+            }
+            n=n/10;
+        }
+        return count;
+    }
